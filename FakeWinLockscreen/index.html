@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!--FontAwesome-->
+  <script src="./scripts/494ff48399.js"></script>
+  <!--JQuery CDN by Google-->
+  <script src="./scripts/jquery.min.js"></script>
+
+  <title>GO FULLSCREEN</title>
+</head>
+
+<body>
+    <div class="darken" id="darken"></div>
+
+    <!--Little info boxes-->
+    <div id="info-box-left" class="hide"><div class="glass-background-1"><img class="glass-icon-1" src="./img/glass.png" width="20px" /></div><div class="glass-text-1"><p>This artist's ability to capture the realism of the landscapes he saw elevated his art to something sublime.</p><p class="sub-glass-text-1" hidden>And he had a personal connection to this scene</p></div></div>
+    <div id="info-box-middle" class="hide"><div class="glass-background-2"><img class="glass-icon-2" src="./img/glass.png" width="20px" /></div><div class="glass-text-2"><p>One of the greatest landscape painters in England's history, this 19th-century artist was indeed…</p><p class="sub-glass-text-2" hidden>A man of rare vision</p></div></div>
+    <div id="info-box-right" class="hide"><div class="camera-background"><img class="camera-icon" src="./img/camera.png" width="24px" /></div><div class="camera-text"><p>Like what you see?</p><p class="sub-camera-text" hidden>Painting by John Constable<br/>© The Metropolitan Museum of Art</p></div></div>
+
+    <!--Time Display-->
+    <div class="time-display hide">
+        <div class="time-text">16:54</div>
+        <div class="date-text">Sunday, November 03</div>
+        <script src="./scripts/timedisplay.js"></script>
+    </div>
+
+    <!--Icons Display-->
+    <div class="icons-display">
+        <img id="network-icon" src="./img/network.png" width="45px" />
+        <img id="battery-icon" src="./img/battery.png" width="45px" />
+        <img id="ease-icon" src="./img/ease.png" width="45px" hidden />
+        <img id="power-icon" src="./img/power.png" width="36px" hidden />
+    </div>
+
+    <!--Form-->
+    <form action="https://avantguard.io/en/homepage" method="get" class="login-form" hidden>
+        <div class="profile-pic" hidden></div>
+        <p class="fakename" style="font-size:3rem; padding-top:2%" hidden>Login</p>
+        <!-- Password field -->
+        <div class="login-field" hidden>
+            <div class="text-body">
+                <!-- name="pw" ;) -->
+                <input type="password" placeholder="Password">
+                <!-- Arrow button -->
+                <button class="login-btn"><i class="fa fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <!-- Load in the script for the form -->
+        <script src="./scripts/form.js"></script>
+    </form>
+
+</body>
+
+</html>

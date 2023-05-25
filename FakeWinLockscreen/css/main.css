@@ -1,0 +1,297 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 0px) {
+  .time-display {
+    font-size: 3rem;
+  }
+  .time-display .date-text {
+    font-size: 1rem;
+  }
+  .login-form {
+    min-width: 100vw;
+    /*top: 25% !important; */
+    top: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .time-display {
+    position: absolute;
+    bottom: 9%;
+    font-size: 10rem;
+  }
+  .time-display .date-text {
+    font-size: 4rem;
+  }
+  .login-form {
+    min-width: 25vw;
+  }
+    .icons-display {
+        position: absolute;
+        bottom: 2%;
+        right: 1%;
+    }
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    color: white;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/RWEwre.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/RWEwre.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+}
+
+body .darken {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.0;
+}
+
+#info-box-left {
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#info-box-middle {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+}
+
+#info-box-right {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+}
+
+body .time-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: flex-start;
+  margin: 2rem 2rem 0 2rem;
+}
+
+body .icons-display {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-end;
+    margin: 1rem;
+}
+
+body .icons-display img {
+    margin-right: 10px;
+}
+
+body .login-form {
+  height: 50vh;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .login-form .profile-pic {
+  height: 13vw;
+  width: 13vw;
+  position: relative;
+  background: url(../img/profilepic.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+body .login-form .fakename {
+    font-size: 3rem;
+    padding-top: 5%;
+    margin: 0;
+}
+
+body .login-form .text-body {
+  position: relative;
+  display: inline-flex;
+  margin-top: 2rem;
+  padding: 0;
+  margin-left: -20%
+}
+
+body .login-form .text-body input {
+  font-size: 18px;
+  color: black;
+  border: none;
+  width: 125%;
+  background: white;
+  padding: 5px;
+  height: 36px;
+  margin-right: 2px;
+  flex-shrink: 0;
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+body .login-form .text-body span::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body .login-form .text-body span::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 0%;
+  height: 2px;
+  background: #fd7792;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body .login-form .login-btn {
+  margin-left: 2px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  outline: 2px solid white;
+  background: none;
+  color: white;
+  -webkit-transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+body .login-form .login-btn i {
+  /*position: absolute;*/
+  top: 0px;
+  left: 15px;
+}
+
+body .login-form .login-btn:hover {
+  opacity: 0.9;
+}
+
+body .login-form .login-btn:focus {
+  opacity: 0.9;
+}
+
+body .login-form .bottom-text {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.glass-icon-1, .glass-icon-2, .camera-icon {
+    float: left;
+    width: 20px;
+    display: inline-block;
+}
+
+.glass-background-1, .glass-background-2, .camera-background {
+    float: left;
+    display: inline-block;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.glass-text-1, .glass-text-2, .camera-text {
+    display: inline-block;
+    float: right;
+    max-width: 15vw;
+    margin-left: 10px;
+    padding: 7px;
+    transition: 0.5s;
+}
+
+.sub-glass-text-1, .sub-glass-text-2, .sub-camera-text {
+    font-size: 14px;
+    color: #a7a7a7;
+    transition: 0.5s;
+}
+
+body * {
+  transition: 0.5s;
+}
+
+::-moz-selection { 
+  color: none;
+  background: none;
+}
+
+::selection {
+  color: none;
+  background: none;
+}
