@@ -31,7 +31,16 @@ $(".darken").on("contextmenu", function () {
 })
 
 $("body *").on("mousedown", function () {
-    console.log("show login");
+    var element = document.getElementById('darken');
+    element.style.opacity = "0.5";
+    $(".hide").hide();
+    $("#battery-icon").attr("hidden", true);
+    $("#ease-icon").attr("hidden", false);
+    $("#power-icon").attr("hidden", false);
+    $(".login-form *").attr("hidden", false);
+})
+
+$(document).keydown(function() {
     var element = document.getElementById('darken');
     element.style.opacity = "0.5";
     $(".hide").hide();
